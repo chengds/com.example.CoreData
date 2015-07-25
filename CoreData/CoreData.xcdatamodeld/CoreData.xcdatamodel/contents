@@ -7,10 +7,9 @@
         <relationship name="climbedRoute" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Route" syncable="YES"/>
     </entity>
     <entity name="DiaryEntry" syncable="YES">
-        <attribute name="climbing_type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="entry_date" optional="YES" attributeType="Date" syncable="YES"/>
-        <relationship name="deleteMe" optional="YES" maxCount="1" deletionRule="Nullify" syncable="YES"/>
-        <relationship name="diary_place" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Place" syncable="YES"/>
+        <attribute name="climbingType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="entryDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="visitedPlace" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Place" syncable="YES"/>
     </entity>
     <entity name="Place" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
@@ -23,8 +22,8 @@
     </entity>
     <elements>
         <element name="Ascent" positionX="-290" positionY="221" width="128" height="103"/>
-        <element name="Route" positionX="-470" positionY="18" width="128" height="88"/>
+        <element name="DiaryEntry" positionX="-612" positionY="-198" width="128" height="90"/>
         <element name="Place" positionX="-162" positionY="68" width="128" height="58"/>
-        <element name="DiaryEntry" positionX="-612" positionY="-198" width="128" height="103"/>
+        <element name="Route" positionX="-470" positionY="18" width="128" height="103"/>
     </elements>
 </model>

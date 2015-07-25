@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Automatic">
     <entity name="Ascent" syncable="YES">
-        <attribute name="ascent_type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="ascentType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="ascent_diary_entry" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DiaryEntry" syncable="YES"/>
-        <relationship name="climbed_route" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Route" syncable="YES"/>
+        <relationship name="ascentDiaryEntry" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DiaryEntry" syncable="YES"/>
+        <relationship name="climbedRoute" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Route" syncable="YES"/>
     </entity>
     <entity name="DiaryEntry" syncable="YES">
         <attribute name="climbing_type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>

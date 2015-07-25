@@ -7,9 +7,9 @@
         <relationship name="climbedRoute" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Route" syncable="YES"/>
     </entity>
     <entity name="DiaryEntry" syncable="YES">
-        <attribute name="climbing_type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="entry_date" optional="YES" attributeType="Date" syncable="YES"/>
-        <relationship name="diary_place" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Place" syncable="YES"/>
+        <attribute name="climbingType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="entryDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="visitedPlace" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Place" syncable="YES"/>
     </entity>
     <entity name="Place" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
